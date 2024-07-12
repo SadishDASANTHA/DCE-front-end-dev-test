@@ -1,0 +1,24 @@
+.example-container {
+    width: auto;
+    height: auto;
+    padding: 10px;
+   /* border: 1px solid #555;
+     The background property is added to clearly distinguish the borders between drawer and main
+       content */
+    background: #F2F5FF;
+  }
+
+.matdrawerstyles{
+   width: 200px;
+   background: #F2F5FF;
+}
+
+.mat-drawer-content{
+  padding:40px;
+}
+
+
+
+
+
+  

@@ -1,0 +1,21 @@
+
+      <mat-list role="list">
+        <mat-list-item class="listItem" role="listitem" *ngFor="let user of listUsers.data">
+          <mat-grid-list cols="2" rowHeight="2:1">
+            <mat-grid-tile>
+                <div class="image"><img src="{{user.avatar}}" height="200px" width="200px"> </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+            <mat-grid-list cols="1" rowHeight="1:1">
+                <div class="email"><b>{{user.email}} </b></div>
+                <div class="first_name">{{user.first_name}} {{user.last_name}} </div> <div class="last_name">  </div>                
+                </mat-grid-list>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-list-item>
+      </mat-list>
+      <mat-paginator [length]="100"
+              [pageSize]="10"
+              [pageSizeOptions]="[5, 10, 25, 100]"
+              aria-label="Select page">
+</mat-paginator>

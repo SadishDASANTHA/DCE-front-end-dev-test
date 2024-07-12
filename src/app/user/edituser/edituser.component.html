@@ -1,0 +1,43 @@
+<mat-card class="matcardstyles">
+  <mat-card-title class="matcardtitlestyles"><b>Update User</b></mat-card-title>
+  <mat-card-content>
+<div *ngIf="dataloaded">
+<form [formGroup]="editUserForm" (submit)="updateUser()">
+    <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Email" formControlName="email">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        <!--<mat-hint>Enter Email</mat-hint> -->
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>First Name</mat-label>
+          <input matInput placeholder="First Name" formControlName="first_name">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+         <!-- <mat-hint>Enter First Name</mat-hint>-->
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Last Name</mat-label>
+          <input matInput placeholder="Last Name" formControlName="last_name">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <!--<mat-hint>Enter Last Name</mat-hint>-->
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Image link</mat-label>
+          <input matInput placeholder="Image link" formControlName="avatar">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <!--<mat-hint>Enter Image Link</mat-hint>-->
+        </mat-form-field>
+      </p>
+      <p>
+        <button mat-flat-button>Update User</button>
+      </p>
+</form>
+</div>
+</mat-card-content>

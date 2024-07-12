@@ -1,0 +1,13 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .topic{
+    padding-left: 40px;
+    
+  }
+
+  .space{
+    background: #F2F5FF;
+  }
+  
